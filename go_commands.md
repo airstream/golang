@@ -11,3 +11,18 @@ Usage:
 usage: go doc [-u] [-c] [package|[package.]symbol[.methodOrField]]
 
     $ go help fmt
+    
+--- 
+
+    $ go mod init github.com/airstream/service
+    $ vi main.go 
+    package main
+
+    import "fmt"
+
+    func main() {
+        fmt.Println("Hello, GO!")
+    }
+
+    $ go run github.com/airstream/service
+    Hello, GO
